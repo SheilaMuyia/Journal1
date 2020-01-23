@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.widget.Toast;
 
 import com.example.journal.adapters.NotesAdapter;
@@ -41,6 +42,12 @@ public class Notepad extends AppCompatActivity {
     private void initViews() {
 
         rvNotes.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_action_mode,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     private void loadNotes(){
