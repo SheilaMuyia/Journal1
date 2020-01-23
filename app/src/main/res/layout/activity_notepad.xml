@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints"
-        android:src="@drawable/ic_add"
+        android:src="@drawable/noteadd"
         android:layout_marginBottom="24dp"
         android:layout_marginRight="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
